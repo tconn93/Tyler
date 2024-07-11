@@ -8,7 +8,7 @@ function Profile(){
             <h1>SexySummer14
             </h1>
             <img src={logo} alt='fine' className='profile-pic'
-           height={'1200px'} width={'800px'} />
+           height={'800px'} width={'400px'} />
         </div>
     )
 }
