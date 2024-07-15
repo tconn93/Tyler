@@ -4,6 +4,7 @@
     width: 100%;
     background-color: black;
     align-items: center;
+height: 235px;
 }
 
 
@@ -15,5 +16,9 @@
 
 .menu-item a:hover{
     color:turquoise;
+}
+
+a{
+all: unset;
 }
 

@@ -1,15 +1,41 @@
 import React from'react';
-import logo from '../image.png';
+import MobileMenu from '../util/menu/MobileMenu';
+
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MobileProfile from '../Profile/MobileProfile';
+import MobileContact from '../Contact/MobileContact';
+import MobileGoals from '../Goals/MobileGoals';
+import MobileSites from '../Sites/MobileSites';
+import MobileSkill from '../Skill/MobileSkill';
 
 function Mobile(){
 
+    const router = createBrowserRouter([
+        {
+            path: '/',
+            element: <MobileProfile />
+        },
+        {
+            path: '/skills',
+            element: <MobileSkill />
+        },
+        {
+            path: '/sites',
+            element: <MobileSites />
+        },
+        {
+            path: '/goals',
+            element: <MobileGoals />
+        },{
+            path: '/contact',
+            element: <MobileContact/>
+        }
+    ]);
+
     return(
         <div style={{backgroundColor: 'black', height: '100vh'}}>
-            
-            <img src={logo} alt='skull' className='skull'/>
-            <h1 style={{color: 'white'}}>Please use a Browser to view Tyler.ag </h1>
-
-        <h2 style={{color: 'white'}}>Thanks Tyler Conner   </h2>
+           <MobileMenu />
+        <RouterProvider router={router}/>
         </div>
     )
 }

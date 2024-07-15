@@ -1,8 +1,14 @@
 .profile {
     width: 100%;
+
     text-align: center;
+    border: 1px solid aqua;
+
 }
 
-.profile-pic {
-    border-radius: 60%;
+.page {
+    height: calc(100vh - 235px);
+    background-color: aqua;
+   
 }
+
