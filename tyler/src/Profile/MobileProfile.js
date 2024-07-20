@@ -7,7 +7,10 @@ function MobileProfile(){
         <div>
                 <MobileMenu />
             <div  className='mobile-profile'> 
-                <h1>Mobile Profile</h1>
+            <h1 style={{fontSize:'xxx-large'}}>Tyler Conner</h1>
+                    <h1 style={{fontSize:'xxx-large'}}>Full Stack Software Engineer</h1>
+                    <h2 style={{fontSize:'x-large'}}>with a focus on</h2>
+                    <h1 style={{fontSize:'xxx-large'}}>Artifical Intelligence</h1>
                 </div>
            
         </div>
