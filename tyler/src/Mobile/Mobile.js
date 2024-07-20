@@ -34,7 +34,7 @@ function Mobile(){
 
     return(
         <div style={{backgroundColor: 'black', height: '100vh'}}>
-           <MobileMenu />
+       
         <RouterProvider router={router}/>
         </div>
     )

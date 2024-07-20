@@ -1,8 +1,10 @@
 import React, {useState} from'react';
+import { useNavigate } from 'react-router';
 import './MobileMenu.css';
 
 function MobileMenu(){
     const [menu, setMenu] = useState(false);
+    const navigate = useNavigate();
     return(
         <div >
             <div className='mobile-menu'>
@@ -20,10 +22,10 @@ function MobileMenu(){
 
             <div style={{display: menu?'block':'none'  }}>
                 <div className='menu-items'>
-                    <div className='menu-item2'><a href='/skills'><h1>Skills</h1></a></div>
-                    <div className='menu-item2'><a href='/sites'><h1>Sites</h1></a></div>
-                    <div className='menu-item2'><a href='/goals'><h1>Goals</h1></a></div>
-                    <div className='menu-item2'><a href='/contact'><h1>Contact</h1></a></div>
+                    <div className='menu-item2'><h1 onClick={()=>navigate('/skills')}>Skills</h1></div>
+                    <div className='menu-item2'><h1 onClick={()=>navigate('/sites')}>Sites</h1></div>
+                    <div className='menu-item2'><h1 onClick={()=>navigate('/goals')}>Goals</h1></div>
+                    <div className='menu-item2'><h1 onClick={()=> navigate('/contact')}>Contact</h1></div>
                 </div>
                 <div className='menu-bottom'>
                     <h1>Tyler Conner</h1>

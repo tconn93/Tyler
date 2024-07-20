@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Profile />
     },
     {
-        path: '/skill',
+        path: '/skills',
         element: <Skill />
     },
     {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
 ]);
 
     return(<div>
-        <Menu />
+    
 <RouterProvider router={router}/>
     </div>)
   }
